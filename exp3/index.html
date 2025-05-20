@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dhaka City College</title>
+    <!-- External CSS -->
+     <link rel="stylesheet" href="./style.css">
+    <!-- Internal CSS -->
+    <style>
+      * {
+        font-family: sans-serif;
+        text-align: center;
+      }
+      p {
+        font-size: 20px;
+      }
+      .banner-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+      }
+
+      button {
+        width: 150px;
+        height: 60px;
+        border-radius: 10px;
+        margin: 20px 10px;
+        cursor: pointer;
+        font-size: 14px;
+      }
+      button:hover {
+        background: #000;
+        color: white;
+      }
+      #programs-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 70vh;
+      }
+
+      table {
+        margin: 50px auto;
+        width: 800px;
+        border: 1px solid black;
+      }
+      table,
+      tr,
+      td,
+      th {
+        border-collapse: collapse;
+        padding: 10px;
+      }
+      tr:hover {
+        background: gray;
+        cursor: pointer;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="banner-section">
+      <div>
+        <!-- Inline CSS -->
+        <h1 style="font-size: 50px; font-weight: bold; padding: 10px 0">
+          Welcome to Dhaka City College
+        </h1>
+        <p>Your path towards a bright future starts here.</p>
+        <div className="button-box">
+          <a href="#programs-section"><button>Explore Programs</button></a>
+          <a href="#contact-section"><button>Contact Us</button></a>
+        </div>
+      </div>
+    </div>
+
+    <div id="programs-section">
+      <div>
+        <h2 style="font-weight: bold; font-size: 40px">
+          Available Programs in DCC
+        </h2>
+        <table border="2">
+          <tr>
+            <th>Program Name</th>
+            <th>Program Cost</th>
+          </tr>
+
+          <tr>
+            <td>CSE</td>
+            <td>3,00,000 tk</td>
+          </tr>
+
+          <tr>
+            <td>BBA</td>
+            <td>3,00,000 tk</td>
+          </tr>
+
+          <tr>
+            <td>Honors</td>
+            <td>2,50,000 tk</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <div id="contact-section">
+      <div>
+        <h2 style="font-weight: bold; font-size: 40px">Contact With Us</h2>
+        <div>
+          <form action="">
+            <input type="text" name="name" placeholder="Your Name" />
+
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Your Email"
+            />
+
+            <textarea
+              name="msg"
+              id="msg"
+              cols="12"
+              placeholder="Your Message"
+            ></textarea>
+
+            <button type="submit" value="Submit Now" style="width: 100%; background: #000; color: white ;">Submit Now</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
