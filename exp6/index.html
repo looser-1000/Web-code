@@ -1,0 +1,38 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Info Form</title>
+     <style>
+        *{
+            font-family: sans-serif;
+        }
+        body{
+            max-width: 800px;
+            margin: auto;
+        }
+        h2{
+          font-size: 40px;
+          text-align: center;
+        }
+        input{
+            width: 100%;
+            box-sizing: border-box;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Enter Student Information & Marks</h2>
+    <form action="submit.php" method="post">
+        Name: <input type="text" name="name" required><br><br>
+        Roll No: <input type="text" name="roll" required><br><br>
+        Subject 1 Marks: <input type="number" name="subject1" required><br><br>
+        Subject 2 Marks: <input type="number" name="subject2" required><br><br>
+        Subject 3 Marks: <input type="number" name="subject3" required><br><br>
+        Subject 4 Marks: <input type="number" name="subject4" required><br><br>
+        Subject 5 Marks: <input type="number" name="subject5" required><br><br>
+        <input style="background-color: black; color: white; cursor: pointer;" class="btn" type="submit" value="Submit">
+    </form>
+</body>
+</html>
